@@ -1,0 +1,4 @@
+<p><%= link_to student.name, student_path(student) %> </p>
+
+<%= link_to 'editar', edit_student_path(student) %>
+<%= link_to 'deletar', student_path(student), method: :delete, data: { confirm: 'Tem certeza que deseja apagar esse Aluno?' }, class: 'delete' %>

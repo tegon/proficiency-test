@@ -1,0 +1,11 @@
+<h3>Alunos</h3>
+
+<% if @students.empty? %>
+  <p> Não existem alunos cadastrados. </p>
+<% else %>
+  <%= render @students %>
+<% end %>
+
+<br />
+
+<%= link_to 'Novo Aluno', new_student_path %>
