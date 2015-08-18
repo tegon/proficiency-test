@@ -1,3 +1,3 @@
-<p>Aluno: <%= link_to @classroom.student.name, student_path(@classroom.student) %></p>
-<p>Curso: <%= link_to @classroom.course.name, course_path(@classroom.course) %></p>
-<p>Data de entrada: <%= l(@classroom.entry_at) %></p>
+<p><%= "#{ tm(Student) }: "%> <%= link_to @classroom.student.name, student_path(@classroom.student) %></p>
+<p><%= "#{ tm(Course) }: " %> <%= link_to @classroom.course.name, course_path(@classroom.course) %></p>
+<p><%= "#{ ta(Classroom, :entry_at) }: "%> <%= l(@classroom.entry_at) %></p>

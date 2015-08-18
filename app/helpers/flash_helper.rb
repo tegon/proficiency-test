@@ -2,9 +2,9 @@ module FlashHelper
   def flash_messages
     flash.collect do |key, msg|
       alert_class = case(key)
-      when :notice
+      when :notice, :success
         "success"
-      when :alert
+      when :alert, :error
         "error"
       else
         "info"

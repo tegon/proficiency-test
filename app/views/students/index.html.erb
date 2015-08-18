@@ -1,11 +1,11 @@
-<h3>Alunos</h3>
+<h3><%= tmp(Student) %></h3>
 
 <% if @students.empty? %>
-  <p> Não existem alunos cadastrados. </p>
+  <p><%= "Não existem #{ tmp(Student) } cadastrados." %></p>
 <% else %>
   <%= render @students %>
 <% end %>
 
 <br />
 
-<%= link_to 'Novo Aluno', new_student_path %>
+<%= link_to "Novo #{ tm(Student) }", new_student_path %>
