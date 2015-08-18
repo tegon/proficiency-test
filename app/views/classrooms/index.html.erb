@@ -1,0 +1,11 @@
+<h3>Matrículas</h3>
+
+<% if @classrooms.empty? %>
+  <p> Não existem matrículas cadastradas. </p>
+<% else %>
+  <%= render @classrooms %>
+<% end %>
+
+<br />
+
+<%= link_to 'Nova Matrícula', new_classroom_path %>

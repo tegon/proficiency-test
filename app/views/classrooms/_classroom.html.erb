@@ -1,0 +1,3 @@
+<p><%= link_to classroom.id, classroom_path(classroom) %> </p>
+
+<%= link_to 'deletar', classroom_path(classroom), method: :delete, data: { confirm: 'Tem certeza que deseja apagar essa Matrícula?' }, class: 'delete' %>
