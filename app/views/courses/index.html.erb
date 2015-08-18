@@ -1,0 +1,11 @@
+<h3>Cursos</h3>
+
+<% if @courses.empty? %>
+  <p> Não existem cursos cadastrados. </p>
+<% else %>
+  <%= render @courses %>
+<% end %>
+
+<br />
+
+<%= link_to 'Novo Curso', new_course_path %>
